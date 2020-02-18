@@ -23,6 +23,20 @@ void APlayerCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	FHitResult result;
+
+
+	APlayerController* PlayerController = Cast<APlayerController>(GetController());
+	if (PlayerController != nullptr)
+	{
+		FHitResult TraceResult(ForceInit);
+		PlayerController->GetHitResultUnderCursor(ECollisionChannel::ECC_Visibility, false, TraceResult);
+		if (TraceResult.GetActor() != nullptr)
+		{
+			ACharacter * target;
+		}
+	}
+
 }
 
 // Called to bind functionality to input
