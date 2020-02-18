@@ -14,4 +14,8 @@ class DEATHISTHEBEGINNING_API ADeathIsTheBeginningGameModeBase : public AGameMod
 {
 	GENERATED_BODY()
 	
+	public: 
+
+	virtual void Tick(float _dTime) override;
+
 };
