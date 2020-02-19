@@ -3,3 +3,7 @@
 
 #include "DeathIsTheBeginningGameModeBase.h"
 
+void ADeathIsTheBeginningGameModeBase::Tick(float _dTime) {
+	UE_LOG(LogTemp, Warning, TEXT("Your message"));
+}
+
